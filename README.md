@@ -1,6 +1,6 @@
 # 新海内部UI
 ## 刷新列表  
-## neoceansoftRefreshRecyclerviewUI
+## RefreshRecyclerView
 ![image](https://github.com/Dougbutyl/neoceansoftRefreshRecyclerviewUI/blob/master/screen/devicescreen.gif)
 
 ## Dependency
