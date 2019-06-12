@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/tv_refreshcount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:gravity="center"
+        android:text="刷新完成"
+        android:textColor="@color/tv_color"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/img_loading"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:src="@mipmap/loading"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:id="@+id/listview_header_content"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:paddingTop="10dip">
+
+            <LinearLayout
+                android:id="@+id/listview_header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:minWidth="0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/refresh_status_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:visibility="invisible"/>
+
+                <LinearLayout
+                    android:id="@+id/header_refresh_time_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/last_refresh_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/listview_header_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/listview_header_text"
+
+                android:visibility="invisible"/>
+
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
