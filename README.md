@@ -47,6 +47,16 @@ Add it in your root build.gradle at the end of repositories:
             }
         });
 ```
+```
+	setPullRefreshEnabled(true);//设置下拉刷新
+	setLoadingMoreEnabled(true);//设置加载更多
+	refresh();//刷新完成
+	refreshComplete("此次更新10条数据");//设置刷新完成时数据提示
+	loadMoreComplete();//刷新完成
+	setNoMore(true);
+	setNoMore(true,"我是有底线的");//设置底部文字
+	refresh();//主动刷新需要设置在刷新监听之后
+```
 
 
 
