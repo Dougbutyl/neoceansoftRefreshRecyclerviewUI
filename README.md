@@ -31,6 +31,22 @@ Add it in your root build.gradle at the end of repositories:
         android:layout_height="match_parent"
       ></com.neocean.app.refreshrecyclerview.RefreshRecyclerView>
 ```
+### 设置刷新监听
+```
+  mRefreshRecyclerView.setLoadingListener(new RefreshRecyclerView.LoadingListener() {
+            @Override
+            public void onRefresh() {
+	   	 //TODO 完成刷新操作
+               
+            }
+
+            @Override
+            public void onLoadMore() {
+		//TODO 完成刷新操作
+               
+            }
+        });
+```
 
 
 
